@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    color: #F8F8F8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5E5E5;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Typography */
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: .5em;
+    margin-bottom: 0;
+}
+
+/* Layout */
+
+.container {
+    width: 80%;
+    max-width: 380px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    padding: 0 .2em;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 10px 10px 0 0;
+}
+
+.profile,
+.chat {
+    max-width: 34px;
+}
+
+.logo {
+    max-width: 84px;
+}
+
+#main-content {
+    aspect-ratio: .711/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+    background-size: cover;
+    background-position: center;
+}
+
+#badge {
+    width: 50%;
+    max-width: 234px;
+    position: relative;
+    top: 30%;
+    transform: rotate(-30deg);
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+}
+
+#button-like,
+#button-dislike {
+    margin: 0 1em;
+    max-width: 92px;
+    aspect-ratio: 1/1;
+    padding: 1em;
+    border: none;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 20px #E9E9EA;
+}
+
+#button-like:active,
+#button-dislike:active {
+    transform: scale(.9);
+}
+
+#button-like:hover,
+#button-like:focus {
+    background-color: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
+}
+
+#button-dislike:hover,
+#button-dislike:focus {
+    background-color: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+}
+
+#button-like img,
+#button-dislike img {
+    max-width: 30px;
+}
